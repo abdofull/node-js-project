@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .a1{
+     font-size: 30px;
+
+   }  
+
+   .a2{
+    padding: 20px;
+    background: linear-gradient(50deg , rgb(85, 80, 80) , rgb(168, 78, 78));
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
+   }
+
+</style>
+<body>
+    <h1 class="a1">All Articals </h1>
+    <hr>
+    <div class="a2">
+        <% for( let i of allArticals) { %>
+            <h1 style="font-size: 30px; color: white;"><%= i.title %></h1>
+            <hr style="width: 40vh;">
+            <h4><%= i.body %></h4>
+            
+            <hr style="width: 100vh;">
+        <% } %>
+    </div>
+    <hr>
+</body>
+</html>
